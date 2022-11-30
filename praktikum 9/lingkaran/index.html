@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hitung Lingkaran</title>
+   <script>
+    function calc(params) {
+        const phi = 3.14
+        let r = document.getElementById("r").value;
+        let luas = phi * r **2;
+        let Keliling = 2 * phi * r;
+
+        let output =document.getElementById("hasil");
+        output.value ="luas : "+ luas +"\n" +"keliling : "+ Keliling;
+    }
+   </script>
+
+</head>
+<body>
+    <h1>Menghitung Luas Lingkaran Dan Keliling Lingkaran</h1>
+    <p>luas = phi * r^2</p>
+    <p>Keliling = 2 * phi * r</p>
+    <table>
+        <tr>
+            <td>jari</td>
+            <td><input type="number" id="r"></td>
+            <td><button onclick="calc()">hitung</button></td>
+        </tr>
+        <tr>
+            <td>hasil</td>
+            <td><textarea name="" id="hasil" cols="" rows="5"></textarea></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
